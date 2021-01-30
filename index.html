@@ -12,7 +12,8 @@
     <h1>Hola</h1>
     <div id="app">
         <h1>{{titulo}}</h1>
-
+        <input type="text" name="prueba" id="prueba" v-model="nuevaFruta">
+        <button @click="agregarFruta">Agregar</button>
         <ul>
             <li v-for="fruta in frutas">{{fruta.nombre}} - {{fruta.cantidad}} <span v-if="fruta.cantidad == 0"> - Sin stock </span>
             </li>
